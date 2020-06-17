@@ -1,6 +1,4 @@
-class UsersController < ApplicationController
-  # 以下のアクションを追加
-  def new
-    @user = User.new
-  end
+Rails.application.routes.draw do
+  # 以下のルーティングを定義
+  resources :users
 end
